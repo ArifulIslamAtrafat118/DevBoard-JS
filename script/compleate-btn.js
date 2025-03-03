@@ -18,7 +18,10 @@ for(const button of buttons){
         const taskCardHeadlineText = taskCardHeadline.innerText;
         //set headline
         const setTaskHeadline = document.getElementById("task-headline-target-span");
-        setTaskHeadline.innerText = taskCardHeadlineText;    
-
+        setTaskHeadline.innerText = taskCardHeadlineText; 
+        //disable the button
+        button.setAttribute("disabled", "true");
+        button.classList.add("opacity-30");
+        button.innerText = "Completed";
     })
 }
