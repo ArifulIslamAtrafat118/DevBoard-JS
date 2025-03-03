@@ -1,6 +1,6 @@
 document.getElementById("activity-message").style.display= 'none';
 
-
+let buttonCount = 0;
 let buttons = document.getElementsByClassName("btn-compleate");
 for(const button of buttons){
     button.addEventListener('click', function(){
@@ -27,10 +27,24 @@ for(const button of buttons){
 
         //disable the button
         button.setAttribute("disabled", "true");
-        button.classList.add("opacity-30");
+        button.classList.add("opacity-30", "cursor-not-allowed");
         button.innerText = "Completed";
+
+        // count task
+        const doneTaskCount = document.getElementById("done-task-count");
+        const doneTaskCountString = doneTaskCount.innerText;
+        let convertedDoneTaskCount = Number(doneTaskCountString);
+        doneTaskCount.innerText = convertedDoneTaskCount + 1;
+        
+        const assignedTask = document.getElementById("assigned-task");
+        const assignedTaskString = assignedTask.innerText;
+        let convertedAssignedTask = Number(assignedTaskString);
+        assignedTask.innerText = convertedAssignedTask - 1;
         
         //show the final alart
-        
+        buttonCount++;
+        if(buttonCount == 6) {
+            alert("All task is complete.");
+        }
     })
 }
