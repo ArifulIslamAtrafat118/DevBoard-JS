@@ -48,50 +48,94 @@
                     </div>
                     <div class="px-5 py-3" id="">
                         <p class=""> the different ways to select an element in the DOM is:
-                            <ol class="list-decimal pl-4">
-                                <li>
-                                    Select by getElementById("value"); it select the element which id is match the passed value.
-                                </li>
-                                <li>
-                                    Select by getElementsByClassName("vlue"); is select the elements those class is match the passed value.
-                                </li>
-                                <li>
-                                    Select by querySelector(); is select the imideate inner element which tag/id/class is match.
-                                </li>
-                                <li>
-                                    Select by querySelectorAll(); it select all the inner elements those are match by tag/id/class.
-                                </li>
-                                <li>
-                                    .closest() it select the perent element wchih is match.
-                                </li>
-                            </ol>
+                        <ol class="list-decimal pl-4">
+                            <li>
+                                Select by getElementById("value"); it select the element which id is match the passed
+                                value.
+                            </li>
+                            <li>
+                                Select by getElementsByClassName("vlue"); is select the elements those class is match
+                                the passed value.
+                            </li>
+                            <li>
+                                Select by querySelector(); is select the imideate inner element which tag/id/class is
+                                match.
+                            </li>
+                            <li>
+                                Select by querySelectorAll(); it select all the inner elements those are match by
+                                tag/id/class.
+                            </li>
+                            <li>
+                                .closest() it select the perent element wchih is match.
+                            </li>
+                        </ol>
                         </p>
                     </div>
                 </div>
                 <div class="bg-white rounded-xl ">
                     <div class="border-b-2 border-dotted border-blue-200" id="">
-                        <h2 class="px-5 py-3 text-xl font-semibold" id=""> What is the difference between innerHTML, innerText, and textContent ?</h2>
+                        <h2 class="px-5 py-3 text-xl font-semibold" id=""> What is the difference between innerHTML,
+                            innerText, and textContent ?</h2>
                     </div>
                     <div class="px-5 py-3" id="">
-                        <p class=""> What are the different ways to select an element in the DOM?
-                            What are the different ways to select an element in the DOM?
-                            What are the different ways to select an element in the DOM? What are the different ways to
-                            select an element in the DOM?
-                            What are the different ways to select an element in the DOM?
-                        </p>
+                        <table class="table-auto border border-gray-300 w-full text-left">
+                            <thead class="bg-gray-200">
+                                <tr>
+                                    <th class="border border-gray-300 px-3 py-2">Property</th>
+                                    <th class="border border-gray-300 px-3 py-2">innerHTML</th>
+                                    <th class="border border-gray-300 px-3 py-2">innerText</th>
+                                    <th class="border border-gray-300 px-3 py-2">textContent</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border px-3 py-2">HTML Tags</td>
+                                    <td class="border px-3 py-2">Includes HTML tags</td>
+                                    <td class="border px-3 py-2">Returns only text</td>
+                                    <td class="border px-3 py-2">Returns only text</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="border px-3 py-2">CSS Visibility</td>
+                                    <td class="border px-3 py-2">Ignores CSS styles</td>
+                                    <td class="border px-3 py-2">Excludes hidden elements</td>
+                                    <td class="border px-3 py-2">Includes hidden elements</td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-3 py-2">Performance</td>
+                                    <td class="border px-3 py-2">Slower (parses HTML)</td>
+                                    <td class="border px-3 py-2">Moderate</td>
+                                    <td class="border px-3 py-2">Faster</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="border px-3 py-2">DOM Modification</td>
+                                    <td class="border px-3 py-2">Can change HTML structure</td>
+                                    <td class="border px-3 py-2">Cannot modify structure</td>
+                                    <td class="border px-3 py-2">Cannot modify structure</td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-3 py-2">Use Case</td>
+                                    <td class="border px-3 py-2">When HTML content is needed</td>
+                                    <td class="border px-3 py-2">For visible text only</td>
+                                    <td class="border px-3 py-2">For all text, hidden or not</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="bg-white rounded-xl ">
                     <div class="border-b-2 border-dotted border-blue-200" id="">
-                        <h2 class="px-5 py-3 text-xl font-semibold" id="">  What is event delegation in the DOM?</h2>
+                        <h2 class="px-5 py-3 text-xl font-semibold" id=""> What is event delegation in the DOM?</h2>
                     </div>
                     <div class="px-5 py-3" id="">
-                        <p class=""> What are the different ways to select an element in the DOM?
-                            What are the different ways to select an element in the DOM?
-                            What are the different ways to select an element in the DOM? What are the different ways to
-                            select an element in the DOM?
-                            What are the different ways to select an element in the DOM?
-                        </p>
+                        <ul class="list-disc list-inside text-gray-800 space-y-1">
+                            <li>Event delegation uses a single event listener on a parent element to manage events from
+                                child elements.</li>
+                            <li>It relies on event bubbling, where the event propagates upward through the DOM tree.
+                            </li>
+                            <li>This approach improves performance and reduces memory usage.</li>
+                            <li>It allows handling of dynamically added child elements without adding new listeners.
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="bg-white rounded-xl ">
@@ -99,25 +143,33 @@
                         <h2 class="px-5 py-3 text-xl font-semibold" id=""> What is event bubbling in the DOM?</h2>
                     </div>
                     <div class="px-5 py-3" id="">
-                        <p class=""> What are the different ways to select an element in the DOM?
-                            What are the different ways to select an element in the DOM?
-                            What are the different ways to select an element in the DOM? What are the different ways to
-                            select an element in the DOM?
-                            What are the different ways to select an element in the DOM?
-                        </p>
+                        <ul class="list-disc list-inside  text-gray-800 space-y-1">
+                            <li>Event bubbling is the process where an event moves from the target element up through
+                                its ancestors.</li>
+                            <li>The event is first handled by the child, then by parent, grandparent, etc.</li>
+                            <li>This allows parent elements to respond to events from their children (used in event
+                                delegation).</li>
+                            <li>The bubbling can be stopped using <code>event.stopPropagation()</code> in JavaScript.
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="bg-white rounded-xl ">
                     <div class="border-b-2 border-dotted border-blue-200" id="">
-                        <h2 class="px-5 py-3 text-xl font-semibold" id=""> How do you create, add, and remove elements using JavaScript?</h2>
+                        <h2 class="px-5 py-3 text-xl font-semibold" id=""> How do you create, add, and remove elements
+                            using JavaScript?</h2>
                     </div>
                     <div class="px-5 py-3" id="">
-                        <p class=""> What are the different ways to select an element in the DOM?
-                            What are the different ways to select an element in the DOM?
-                            What are the different ways to select an element in the DOM? What are the different ways to
-                            select an element in the DOM?
-                            What are the different ways to select an element in the DOM?
-                        </p>
+                        <ul class="list-disc list-inside  text-gray-800 space-y-1">
+                            <li><strong>Create:</strong> Use <code>document.createElement("tag")</code> to create a new
+                                element.</li>
+                            <li><strong>Add:</strong> Use <code>parent.appendChild(child)</code> or
+                                <code>parent.prepend(child)</code> to insert it into the DOM.</li>
+                            <li><strong>Remove:</strong> Use <code>element.remove()</code> to delete an element
+                                directly.</li>
+                            <li><strong>Alternative Remove:</strong> Use <code>parent.removeChild(child)</code> if you
+                                have the parent reference.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
